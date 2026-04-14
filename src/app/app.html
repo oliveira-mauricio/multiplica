@@ -433,7 +433,7 @@
                 font-size: 0.6rem;
             }
         }
-        
+
         @media (max-width: 650px) {
             .header-flex {
                 flex-direction: column;
@@ -501,7 +501,7 @@
                 <div class="wheel-360" id="wheel360">
                     <div class="wheel-center">MM<br>360°</div>
                 </div>
-                
+
                 <div class="services-list-grid">
                     <h3><i class="fas fa-cogs" style="color:#00E676"></i> Nossas frentes</h3>
                     <div class="grid-services" id="serviceGrid"></div>
@@ -548,9 +548,9 @@
     (function() {
         const servicosCompletos = [
             "Marketing Estratégico", "Comunicação", "Branding", "Social Media",
-            "Performance/Mídia Paga", "Trade Marketing", "Pesquisa de Mercado", 
-            "Relações Públicas", "Employer Branding", "Growth Marketing", 
-            "Eventos e Experiência", "Outbound Marketing", "Inbound Marketing", 
+            "Performance/Mídia Paga", "Trade Marketing", "Pesquisa de Mercado",
+            "Relações Públicas", "Employer Branding", "Growth Marketing",
+            "Eventos e Experiência", "Outbound Marketing", "Inbound Marketing",
             "Marketing de Conteúdo", "Marketing Digital", "Endomarketing", "Criação de Sites"
         ];
 
@@ -612,7 +612,7 @@
                     { nome: "Marketing Digital", desc: "SEO, sites, tráfego, automações", icon: "laptop-code" },
                     { nome: "Endomarketing", desc: "Ações internas e engajamento", icon: "users" }
                 ];
-                
+
                 solucoesExtendidas.forEach(sol => {
                     const div = document.createElement('div');
                     div.style.background = "#0A1F44";
@@ -622,7 +622,7 @@
                     div.innerHTML = `<i class="fas fa-${sol.icon}"></i> <strong>${sol.nome}</strong><br>${sol.desc}`;
                     container.appendChild(div);
                 });
-                
+
                 const divSite = document.createElement('div');
                 divSite.style.background = "linear-gradient(95deg,#0A1F44,#0e2b5e)";
                 divSite.style.borderRadius = "28px";
@@ -638,52 +638,57 @@
         function criarRoda360() {
             const wheel = document.getElementById('wheel360');
             if (!wheel) return;
-            
+
             const centerDiv = wheel.querySelector('.wheel-center');
             wheel.innerHTML = '';
             wheel.appendChild(centerDiv);
-            
+
             const radius = wheel.offsetWidth * 0.38;
             const centerX = wheel.offsetWidth / 2;
             const centerY = wheel.offsetHeight / 2;
             const total = servicosCompletos.length;
             const angleStep = (Math.PI * 2) / total;
-            
+
             servicosCompletos.forEach((serv, idx) => {
                 const angle = idx * angleStep - Math.PI / 2;
                 const x = centerX + radius * Math.cos(angle);
                 const y = centerY + radius * Math.sin(angle);
-                
+
                 const item = document.createElement('div');
                 item.className = 'service-item-wheel';
                 item.textContent = serv.length > 18 ? serv.substring(0, 16) + '..' : serv;
                 item.title = serv;
-                
+
                 item.style.left = (x - item.offsetWidth / 2) + 'px';
                 item.style.top = (y - item.offsetHeight / 2) + 'px';
-                
+
                 wheel.appendChild(item);
+              const itemWidth = item.offsetWidth;
+              const itemHeight = item.offsetHeight;
+
+              item.style.left = (x - itemWidth / 2) + 'px';
+              item.style.top = (y - itemHeight / 2) + 'px';
             });
         }
 
         function ajustarRodaResponsiva() {
             const wheel = document.getElementById('wheel360');
             if (!wheel) return;
-            
+
             const items = document.querySelectorAll('.service-item-wheel');
             if (items.length === 0) return;
-            
+
             const radius = wheel.offsetWidth * 0.38;
             const centerX = wheel.offsetWidth / 2;
             const centerY = wheel.offsetHeight / 2;
             const total = servicosCompletos.length;
             const angleStep = (Math.PI * 2) / total;
-            
+
             items.forEach((item, idx) => {
                 const angle = idx * angleStep - Math.PI / 2;
                 const x = centerX + radius * Math.cos(angle);
                 const y = centerY + radius * Math.sin(angle);
-                
+
                 item.style.left = (x - item.offsetWidth / 2) + 'px';
                 item.style.top = (y - item.offsetHeight / 2) + 'px';
             });
@@ -694,14 +699,14 @@
             preencherGridServicos();
             preencherTodasSolucoes();
             criarRoda360();
-            
+
             setTimeout(() => {
                 ajustarRodaResponsiva();
             }, 100);
             } catch (error) {
                 console.error("Erro ao inicializar a roda 360°:", e);
             }
-            
+
             let resizeTimeout;
             window.addEventListener('resize', function() {
                 clearTimeout(resizeTimeout);
@@ -709,17 +714,17 @@
                     ajustarRodaResponsiva();
                 }, 200);
             });
-            
+
             const observer = new ResizeObserver(function() {
                 ajustarRodaResponsiva();
             });
-            
+
             const wheel = document.getElementById('wheel360');
             if (wheel) {
                 observer.observe(wheel);
             }
         }
-        
+
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', init);
         } else {

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Multiplica Marketing | Estratégia que multiplica resultados</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Montserrat:wght@600;700;800;900&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -96,9 +97,9 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(4px);
-      border: 1px solid rgba(30,99,255,0.5);
+      border: 1px solid rgba(30, 99, 255, 0.5);
       padding: 10px 24px;
       border-radius: 60px;
       font-weight: 700;
@@ -117,7 +118,7 @@
       transform: translateY(-3px);
       background: #1E63FF;
       border-color: #00E676;
-      box-shadow: 0 8px 20px rgba(0,200,83,0.3);
+      box-shadow: 0 8px 20px rgba(0, 200, 83, 0.3);
     }
 
     .hero {
@@ -138,7 +139,7 @@
     }
 
     .hero-badge {
-      background: rgba(0,200,83,0.2);
+      background: rgba(0, 200, 83, 0.2);
       display: inline-block;
       padding: 6px 16px;
       border-radius: 40px;
@@ -152,6 +153,21 @@
       font-size: 3.4rem;
       line-height: 1.2;
       margin-bottom: 20px;
+    }
+
+    .hero-right {
+      width: 100%;
+      display: flex;
+    }
+
+    .badge-multi {
+      display: inline-flex;
+      width: fit-content;
+      margin-top: 10px;
+      padding: 4px 30px;
+      font-size: 30px;
+      line-height: 1.2;
+
     }
 
     .gradient-text {
@@ -189,13 +205,13 @@
       align-items: center;
       gap: 10px;
       transition: 0.2s;
-      box-shadow: 0 6px 14px rgba(0,200,83,0.2);
+      box-shadow: 0 6px 14px rgba(0, 200, 83, 0.2);
     }
 
     .btn-primary:hover {
       transform: scale(1.02);
       background: linear-gradient(95deg, #2a6eff, #00e676);
-      box-shadow: 0 10px 20px rgba(0,230,118,0.4);
+      box-shadow: 0 10px 20px rgba(0, 230, 118, 0.4);
     }
 
     .btn-outline {
@@ -305,7 +321,7 @@
       height: 340px;
       border-radius: 50%;
       background: radial-gradient(circle at 30% 30%, #0e2b5e, #05112e);
-      box-shadow: 0 25px 40px rgba(0,0,0,0.5), inset 0 1px 2px rgba(255,255,255,0.1);
+      box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.1);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -325,13 +341,16 @@
       font-family: 'Montserrat', sans-serif;
       color: white;
       font-size: 1.1rem;
-      box-shadow: 0 0 0 6px rgba(0,230,118,0.3);
+      box-shadow: 0 0 0 6px rgba(0, 230, 118, 0.3);
       z-index: 5;
     }
 
     .service-item-wheel {
       position: absolute;
-      width: 95px;
+      min-width: 80px;
+      max-width: 110px;
+      width: auto;
+      white-space: nowrap;
       text-align: center;
       font-size: 0.7rem;
       font-weight: 700;
@@ -355,11 +374,11 @@
     .services-list-grid {
       flex: 1;
       min-width: 280px;
-      background: rgba(0,0,0,0.3);
+      background: rgba(0, 0, 0, 0.3);
       border-radius: 48px;
       padding: 24px 28px;
       backdrop-filter: blur(8px);
-      border: 1px solid rgba(30,99,255,0.5);
+      border: 1px solid rgba(30, 99, 255, 0.5);
     }
 
     .services-list-grid h3 {
@@ -377,7 +396,7 @@
     }
 
     .grid-services span {
-      background: rgba(30,99,255,0.2);
+      background: rgba(30, 99, 255, 0.2);
       padding: 8px 14px;
       border-radius: 60px;
       font-size: 0.8rem;
@@ -424,10 +443,12 @@
       .hero-left h1 {
         font-size: 2.4rem;
       }
+
       .wheel-360 {
         width: 280px;
         height: 280px;
       }
+
       .service-item-wheel {
         width: 75px;
         font-size: 0.6rem;
@@ -439,9 +460,11 @@
         flex-direction: column;
         text-align: center;
       }
+
       .social-trio {
         justify-content: center;
       }
+
       .wheel-360 {
         width: 260px;
         height: 260px;
@@ -457,9 +480,12 @@
       <span class="logo-multi">MULTIPLICA MARKETING</span>
     </div>
     <div class="social-trio">
-      <a href="https://wa.me/5549991089219?text=Ol%C3%A1%2C%20quero%20multiplicar%20meus%20resultados!" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-      <a href="https://instagram.com/multiplicamarketing" target="_blank" class="social-btn"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="https://facebook.com/multiplicamarketing" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="https://wa.me/5549991089219?text=Ol%C3%A1%2C%20quero%20multiplicar%20meus%20resultados!" target="_blank"
+         class="social-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://instagram.com/multiplicamarketing" target="_blank" class="social-btn"><i
+        class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://facebook.com/multiplicamarketing" target="_blank" class="social-btn"><i
+        class="fab fa-facebook-f"></i> Facebook</a>
     </div>
   </div>
 </header>
@@ -470,15 +496,26 @@
       <div class="hero-left">
         <div class="hero-badge">🚀 Estratégia que multiplica faturamento</div>
         <h1>A gente não faz marketing. <span class="gradient-text">A gente multiplica faturamento.</span></h1>
-        <p class="hero-desc">Planejamento, performance e crescimento real. Sua empresa não precisa aparecer mais. Precisa vender mais.</p>
+        <p class="hero-desc">Planejamento, performance e crescimento real. Sua empresa não precisa aparecer mais.
+          Precisa vender mais.</p>
         <div class="hero-cta">
-          <a href="https://wa.me/5549991089219?text=Quero%20multiplicar%20resultados!" target="_blank" class="btn-primary"><i class="fab fa-whatsapp"></i> Fale com a gente</a>
-          <a href="#servicos360" class="btn-outline"><i class="fas fa-chart-line"></i> Conheça Marketing 360</a>
+          <a href="https://wa.me/5549991089219?text=Quero%20multiplicar%20resultados!" target="_blank"
+             class="btn-primary">
+            <i class="fab fa-whatsapp"></i> Fale com a gente</a>
+          <a href="#servicos360"
+             class="btn-outline">
+            <i class="fas fa-chart-line">
+            </i> Conheça Marketing 360
+          </a>
+          <div class="hero-right">
+            <div class="badge-multi">
+              <i class="fas fa-chart-simple">
+              </i> Crescimento não é sorte. É estratégia.
+            </div>
+          </div>
         </div>
       </div>
-      <div class="hero-right">
-        <div class="badge-multi"><i class="fas fa-chart-simple"></i> Crescimento não é sorte. É estratégia.</div>
-      </div>
+
     </div>
   </section>
 
@@ -486,10 +523,18 @@
     <h2 class="section-title">🧠 <span class="gradient-text">Autoridade & Estratégia</span></h2>
     <p class="section-sub">Direto ao ponto: Marketing sem resultado é custo. Nós estruturamos crescimento.</p>
     <div class="cards-diff">
-      <div class="card"><i class="fas fa-rocket"></i><h3>Growth Focus</h3><p>Escalamos vendas com testes e dados</p></div>
-      <div class="card"><i class="fas fa-chart-line"></i><h3>Performance</h3><p>Mídia paga, ROI, leads qualificados</p></div>
-      <div class="card"><i class="fas fa-brain"></i><h3>Branding Forte</h3><p>Posicionamento que multiplica valor</p></div>
-      <div class="card"><i class="fas fa-bullhorn"></i><h3>Comunicação direta</h3><p>Tom líder, sem enrolação</p></div>
+      <div class="card"><i class="fas fa-rocket"></i>
+        <h3>Growth Focus</h3>
+        <p>Escalamos vendas com testes e dados</p></div>
+      <div class="card"><i class="fas fa-chart-line"></i>
+        <h3>Performance</h3>
+        <p>Mídia paga, ROI, leads qualificados</p></div>
+      <div class="card"><i class="fas fa-brain"></i>
+        <h3>Branding Forte</h3>
+        <p>Posicionamento que multiplica valor</p></div>
+      <div class="card"><i class="fas fa-bullhorn"></i>
+        <h3>Comunicação direta</h3>
+        <p>Tom líder, sem enrolação</p></div>
     </div>
   </div>
 
@@ -504,7 +549,8 @@
         <div class="services-list-grid">
           <h3><i class="fas fa-cogs" style="color:#00E676"></i> Nossas frentes</h3>
           <div class="grid-services" id="serviceGrid"></div>
-          <p style="margin-top: 18px; font-size:0.75rem; border-top: 1px solid #1E63FF; padding-top: 12px;"><i class="fas fa-code"></i> + Criação de Sites e Lojas Virtuais de alta conversão</p>
+          <p style="margin-top: 18px; font-size:0.75rem; border-top: 1px solid #1E63FF; padding-top: 12px;"><i
+            class="fas fa-code"></i> + Criação de Sites e Lojas Virtuais de alta conversão</p>
         </div>
       </div>
       <div style="text-align: center; margin-top: 40px;">
@@ -515,15 +561,19 @@
 
   <div class="container section">
     <h2 class="section-title">📋 TODAS AS SOLUÇÕES <span class="gradient-text">MULTIPLICA</span></h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-top: 30px;" id="todasSolucoes"></div>
+    <div
+      style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-top: 30px;"
+      id="todasSolucoes"></div>
   </div>
 
   <div class="container">
     <div class="promise-box">
       <div class="quote">"Se não multiplica, não faz sentido."</div>
-      <p style="margin-top: 20px;">Empresas que nos escolhem têm multiplicação real de faturamento, não apenas presença digital. Chegou a hora de crescer com estratégia.</p>
+      <p style="margin-top: 20px;">Empresas que nos escolhem têm multiplicação real de faturamento, não apenas presença
+        digital. Chegou a hora de crescer com estratégia.</p>
       <div style="margin-top: 28px;">
-        <a href="https://wa.me/5549991089219?text=Quero%20uma%20estrat%C3%A9gia%20que%20multiplique%20resultados!" target="_blank" class="btn-primary"><i class="fab fa-whatsapp"></i> Fale com um estrategista</a>
+        <a href="https://wa.me/5549991089219?text=Quero%20uma%20estrat%C3%A9gia%20que%20multiplique%20resultados!"
+           target="_blank" class="btn-primary"><i class="fab fa-whatsapp"></i> Fale com um estrategista</a>
       </div>
     </div>
   </div>
@@ -532,24 +582,27 @@
 <footer>
   <div class="container">
     <p><strong>MULTIPLICA MARKETING</strong> — Estratégia que multiplica resultados reais</p>
-    <p style="margin: 16px 0; font-size: 0.8rem;"><i class="fas fa-chart-line"></i> Marketing sem resultado é custo. Acelerador de faturamento.</p>
+    <p style="margin: 16px 0; font-size: 0.8rem;"><i class="fas fa-chart-line"></i> Marketing sem resultado é custo.
+      Acelerador de faturamento.</p>
     <div class="social-trio" style="justify-content: center; margin-top: 16px;">
-      <a href="https://wa.me/5549991089219" target="_blank" class="social-btn" style="padding: 6px 18px;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-      <a href="https://instagram.com/multiplicamarketing" target="_blank" class="social-btn" style="padding: 6px 18px;"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="https://facebook.com/multiplicamarketing" target="_blank" class="social-btn" style="padding: 6px 18px;"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="https://wa.me/5549991089219" target="_blank" class="social-btn" style="padding: 6px 18px;"><i
+        class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://instagram.com/multiplicamarketing" target="_blank" class="social-btn" style="padding: 6px 18px;"><i
+        class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://facebook.com/multiplicamarketing" target="_blank" class="social-btn"
+         style="padding: 6px 18px;"><i class="fab fa-facebook-f"></i> Facebook</a>
     </div>
     <p style="margin-top: 28px; font-size: 0.7rem;">© 2025 Multiplica Marketing — Crescimento com estratégia.</p>
   </div>
 </footer>
 
 <script>
-  (function() {
+  (function () {
     const servicosCompletos = [
-      "Marketing Estratégico", "Comunicação", "Branding", "Social Media",
-      "Performance/Mídia Paga", "Trade Marketing", "Pesquisa de Mercado",
-      "Relações Públicas", "Employer Branding", "Growth Marketing",
-      "Eventos e Experiência", "Outbound Marketing", "Inbound Marketing",
-      "Marketing de Conteúdo", "Marketing Digital", "Endomarketing", "Criação de Sites"
+      "Marketing", "Comunicação", "Social Media",
+      "Mídia Paga", "Pesquisa de Mercado",
+      "Relações Públicas", "Eventos e Experiência", "Outbound Marketing",
+      "Inbound Marketing", "Marketing Digital", "Endomarketing", "Criação de Sites"
     ];
 
     const iconesServicos = {
@@ -593,22 +646,22 @@
       if (container) {
         container.innerHTML = '';
         const solucoesExtendidas = [
-          { nome: "Marketing Estratégico", desc: "Planejamento focado em crescimento", icon: "chart-pie" },
-          { nome: "Comunicação", desc: "Gestão da mensagem da marca", icon: "comments" },
-          { nome: "Branding", desc: "Fortalecimento da marca no mercado", icon: "trademark" },
-          { nome: "Social Media", desc: "Gestão e conteúdo estratégico", icon: "instagram" },
-          { nome: "Performance / Mídia Paga", desc: "Google Ads, Meta Ads, ROI máximo", icon: "chart-line" },
-          { nome: "Trade Marketing", desc: "Estratégias PDV e canais", icon: "store" },
-          { nome: "Pesquisa de Mercado", desc: "Análise concorrência e consumidor", icon: "chart-bar" },
-          { nome: "Relações Públicas", desc: "Reputação e relacionamento com mídia", icon: "newspaper" },
-          { nome: "Employer Branding", desc: "Marca empregadora, atrair talentos", icon: "building" },
-          { nome: "Growth Marketing", desc: "Crescimento acelerado com dados", icon: "chart-line" },
-          { nome: "Eventos e Experiência", desc: "Conexão com público", icon: "calendar-alt" },
-          { nome: "Outbound Marketing", desc: "Prospecção ativa (ligações, e-mail)", icon: "bullhorn" },
-          { nome: "Inbound Marketing", desc: "Atração de leads com conteúdo", icon: "funnel-dollar" },
-          { nome: "Marketing de Conteúdo", desc: "Posts, blogs, vídeos estratégicos", icon: "pen-fancy" },
-          { nome: "Marketing Digital", desc: "SEO, sites, tráfego, automações", icon: "laptop-code" },
-          { nome: "Endomarketing", desc: "Ações internas e engajamento", icon: "users" }
+          {nome: "Marketing Estratégico", desc: "Planejamento focado em crescimento", icon: "chart-pie"},
+          {nome: "Comunicação", desc: "Gestão da mensagem da marca", icon: "comments"},
+          {nome: "Branding", desc: "Fortalecimento da marca no mercado", icon: "trademark"},
+          {nome: "Social Media", desc: "Gestão e conteúdo estratégico", icon: "instagram"},
+          {nome: "Performance / Mídia Paga", desc: "Google Ads, Meta Ads, ROI máximo", icon: "chart-line"},
+          {nome: "Trade Marketing", desc: "Estratégias PDV e canais", icon: "store"},
+          {nome: "Pesquisa de Mercado", desc: "Análise concorrência e consumidor", icon: "chart-bar"},
+          {nome: "Relações Públicas", desc: "Reputação e relacionamento com mídia", icon: "newspaper"},
+          {nome: "Employer Branding", desc: "Marca empregadora, atrair talentos", icon: "building"},
+          {nome: "Growth Marketing", desc: "Crescimento acelerado com dados", icon: "chart-line"},
+          {nome: "Eventos e Experiência", desc: "Conexão com público", icon: "calendar-alt"},
+          {nome: "Outbound Marketing", desc: "Prospecção ativa (ligações, e-mail)", icon: "bullhorn"},
+          {nome: "Inbound Marketing", desc: "Atração de leads com conteúdo", icon: "funnel-dollar"},
+          {nome: "Marketing de Conteúdo", desc: "Posts, blogs, vídeos estratégicos", icon: "pen-fancy"},
+          {nome: "Marketing Digital", desc: "SEO, sites, tráfego, automações", icon: "laptop-code"},
+          {nome: "Endomarketing", desc: "Ações internas e engajamento", icon: "users"}
         ];
 
         solucoesExtendidas.forEach(sol => {
@@ -697,14 +750,14 @@
       }, 100);
 
       let resizeTimeout;
-      window.addEventListener('resize', function() {
+      window.addEventListener('resize', function () {
         clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(function() {
+        resizeTimeout = setTimeout(function () {
           ajustarRodaResponsiva();
         }, 200);
       });
 
-      const observer = new ResizeObserver(function() {
+      const observer = new ResizeObserver(function () {
         ajustarRodaResponsiva();
       });
 
@@ -723,4 +776,4 @@
 </script>
 </body>
 </html>
-  <app-root></app-root>
+<app-root></app-root>

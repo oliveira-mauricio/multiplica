@@ -49,7 +49,7 @@ export class Marketing360Component implements AfterViewInit {
 
     wheel.querySelectorAll('.service-item-wheel').forEach((el: any) => el.remove());
 
-    const radius = wheel.offsetWidth * 0.38;
+    const radius = wheel.offsetWidth * 0.68;
     const centerX = wheel.offsetWidth / 2;
     const centerY = wheel.offsetHeight / 2;
 
