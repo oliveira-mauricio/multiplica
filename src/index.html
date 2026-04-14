@@ -141,9 +141,9 @@
     .hero-badge {
       background: rgba(0, 200, 83, 0.2);
       display: inline-block;
-      padding: 6px 16px;
+      padding: 8px 20px;
       border-radius: 40px;
-      font-size: 0.8rem;
+      font-size: 1.5rem;
       font-weight: 600;
       color: #00E676;
       margin-bottom: 20px;
@@ -503,8 +503,9 @@
              class="btn-primary">
             <i class="fab fa-whatsapp"></i> Fale com a gente</a>
           <a href="#servicos360"
-             class="btn-outline">
+             class="btn-outline" id="btn360">
             <i class="fas fa-chart-line">
+
             </i> Conheça Marketing 360
           </a>
           <div class="hero-right">
@@ -744,6 +745,25 @@
       preencherGridServicos();
       preencherTodasSolucoes();
       criarRoda360();
+
+      const btn360 = document.getElementById('btn360');
+
+      if (btn360) {
+        btn360.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const target = document.querySelector('#servicos360');
+          const offset = 80
+
+          const top = target.getBoundingClientRect().top + window.pageXOffset - offset;
+          setTimeout(() => {
+            window.scrollTo({
+              top: top,
+              behavior: 'smooth',
+            });
+          },300);
+        });
+      }
 
       setTimeout(() => {
         ajustarRodaResponsiva();
